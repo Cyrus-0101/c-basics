@@ -66,10 +66,11 @@ int main()
     // User interface for input
     printf("Press 1 for addition, 2 for division, 3 for multiplication, 4 for subtraction, and  0 to quit \n");
     scanf("%d", &op);
+
     printf("Number 1: ");
     F; // Flush output buffer to ensure prompt is displayed
-
     scanf("%d", &x);
+    
     printf("Number 2: ");
     F; // Flush output buffer
     scanf("%d", &y);
@@ -102,7 +103,7 @@ int main()
     if (fp != NULL)
     {
         fp(&result, x, y);
-        printf("Result: %d\n", result);
+        printf("Result:   %d\n", result);
     }
 
     return 0;
