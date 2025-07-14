@@ -3,7 +3,7 @@
 /**
  * @file word_length_vertical_histogram.c
  * @brief Prints a vertical histogram of word lengths entered by the user.
- * 
+ *
  * A word is defined as a sequence of characters separated by spaces, tabs, or newlines.
  * The histogram is displayed every time the user presses Enter.
  * The program resets the histogram after each line of input.
@@ -43,6 +43,14 @@ int main()
         }
         else if (c == '\n')
         {
+            // Register last word if we're inside one
+            if (state == IN && word_len > 0 && word_len < MAX_WORD_LEN)
+            {
+                ++word_lengths[word_len];
+                word_len = 0;
+                state = OUT;
+            }
+            
             // Find max frequency for vertical height
             for (int i = 1; i < MAX_WORD_LEN; ++i)
             {
