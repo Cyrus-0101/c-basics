@@ -18,12 +18,8 @@ int main()
     int c;
     int word_len = 0;
     int state = OUT;
-    int word_lengths[MAX_WORD_LEN];
+    int word_lengths[MAX_WORD_LEN] = {0};
     int max = 0;
-
-    // Initialize frequency array
-    for (int i = 0; i < MAX_WORD_LEN; ++i)
-        word_lengths[i] = 0;
 
     printf("Type text. Press Ctrl+D (EOF) to see vertical word length histogram.\n");
 
