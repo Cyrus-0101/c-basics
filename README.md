@@ -5,6 +5,40 @@ This repository contains my journey learning C programming through various resou
 - Linux man pages
 - Open source projects on GitHub
 
+## Getting Started
+Our application entrypoint is `main_menu.c`, which runs the applications
+built. 
+1. Create an outputs folder.
+2. Build all your projects, individually (TO-DO: Add build-all script)
+
+```sh
+    # Example build and run (test) script.
+    clang -o ./outputs/word_length_vertical_histogram ./arrays/word_length_vertical_histogram.c && ./outputs/word_length_vertical_histogram
+```
+
+3. Build main-menu and run, with the same script (minding the dirs).You should see 
+something like this:
+
+```sh
+    🔥 Mini Tool Suite 🔥
+    -----------STRING OPS----------------
+    1. Celsius to Fahrenheit Table
+    2. Character Count
+    3. Word Count
+    4. Word Per Line
+
+    ----------ARRAY OPS----------------
+    5. Count Frequencies (Histogram)
+    6. Word Length (Vertical Histogram)
+
+    -----------POINTER OPS-------------
+    7. Function Pointers Demo
+
+    -----------------------------------
+    0. Exit
+    Choose a program to run: 
+```
+
 ## Topics Covered
 
 ### Function Pointers
