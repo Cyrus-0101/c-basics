@@ -20,12 +20,14 @@ void show_menu()
     printf("\n----------ARRAY OPS----------------\n");
     printf("5. Count Frequencies (Histogram)\n");
     printf("6. Word Length (Vertical Histogram)\n");
+    printf("7. Char Length (Vertical Histogram)\n");
+
     printf("\n-----------POINTER OPS-------------\n");
-    printf("7. Function Pointers Demo\n");
+    printf("8. Function Pointers Demo\n");
 
     printf("\n-----------------------------------\n");
     printf("0. Exit\n");
-    printf("Choose a program to run: ");
+    printf("Choose a program to run: \n");
 }
 
 int main()
@@ -59,6 +61,9 @@ int main()
             system("./outputs/word_length_vertical_histogram");
             break;
         case 7:
+            system("./outputs/char_length_vertical_histogram");
+            break;
+        case 8:
             system("./outputs/function_pointers");
             break;
         case 0:
