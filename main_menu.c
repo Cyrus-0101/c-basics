@@ -23,7 +23,9 @@ void show_menu()
     printf("7. Char Length (Vertical Histogram)\n");
 
     printf("\n-----------POINTER OPS-------------\n");
-    printf("8. Function Pointers Demo\n");
+    printf("8. Exponentiation\n");
+    printf("9. Function Pointers Demo\n");
+    printf("10. Temperature Converter: (Cel to Fahr)\n");
 
     printf("\n-----------------------------------\n");
     printf("0. Exit\n");
@@ -64,6 +66,8 @@ int main()
             system("./outputs/char_length_vertical_histogram");
             break;
         case 8:
+            system("./outputs/exponentiation");
+        case 9:
             system("./outputs/function_pointers");
             break;
         case 0:
